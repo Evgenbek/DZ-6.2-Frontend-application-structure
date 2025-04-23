@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && babel src -d dist && cp src/index.html dist && cp src/index.css dist && cp src/first.svg dist",
+    "build": "rm -rf dist && babel src -d dist && cp src/index.html dist && cp src/index.css dist",
     "lint": "eslint . && stylelint ./src/**/*.css",
     "start": "http-server ./dist"
   },
@@ -23,5 +23,8 @@
     "stylelint-config-recommended": "16.0.0",
     "stylelint-order": "7.0.0",
     "stylelint-semantic-groups": "1.2.1"
+  },
+  "dependencies": {
+    "mini.css": "3.0.1"
   }
 }
