@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && babel src -d dist && cp src/index.html dist && cp src/index.css dist && cp src/first.svg dist",
+    "build": "rm -rf dist && babel src -d dist && cp src/index.html dist && cp src/index.css dist && svgo -f./src -o ./dist",
     "lint": "eslint . && stylelint ./src/**/*.css",
     "start": "http-server ./dist"
   },
