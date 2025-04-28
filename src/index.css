@@ -1,3 +1,9 @@
-.page {
-    background-color: aqua; 
+.button {
+    width:  100px;
+    height: 100px;
+
+    border: solid 3px #1f29b6 ;
+    border-radius: 20px;
+
+    background-color: aquamarine;
 }
